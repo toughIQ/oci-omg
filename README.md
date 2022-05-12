@@ -8,13 +8,15 @@ _If you run **docker** instead of **podman** just replace `podman` with `docker`
 
 ## Build
 `podman build -t quay.io/toughiq/omg:latest .` 
+
 If you build locally, you can set the image name to your linkings.
 
 
 
 ## Run via Podman
 `podman run -it --rm -v /path/to/must-gather.local.6450507246821680:/home/omg/must-gather:Z quay.io/toughiq/omg:latest` 
-This inits the container with your desired must-gather directory and places you afterwards within the container and you can start doing your omg/oc commands.
+
+This inits the container with your desired must-gather directory and places you afterwards within the container and you can start doing your _omg/oc_ commands.
 
 ## Create BASH alias function
 `mkdir ${HOME}/.bashrc.d` 
@@ -37,4 +39,5 @@ EOF
 
 ## Run via BASH CLI using alias function
 `omg /PATH/TO/must-gather-directory` 
-This inits the container with your desired must-gather directory and places you afterwards within the container and you can start doing your omg/oc commands.
+
+This inits the container with your desired must-gather directory and places you afterwards within the container and you can start doing your _omg/oc_ commands.
