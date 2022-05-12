@@ -33,8 +33,6 @@ function omg() {
 EOF
 ```
 
-`chmod +x ${HOME}/.bashrc.d/omg.sh`
-
 `source ${HOME}/.bashrc.d/omg.sh`
 
 ## Run via BASH CLI using alias function
