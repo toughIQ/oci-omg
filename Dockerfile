@@ -10,8 +10,11 @@ RUN chmod +x entrypoint.sh
 
 USER omg
 
-#RUN pip3 install o-must-gather --user
-RUN git clone https://github.com/kxr/o-must-gather.git && cd o-must-gather && pip install . --user
+# we use the PIP installer to fetch v1 of o-must-gather
+RUN pip3 install o-must-gather --user
+
+# v2 of o-must-gather is still WiP
+#RUN git clone https://github.com/kxr/o-must-gather.git && cd o-must-gather && pip install . --user
 
 ENV PATH="/home/omg/.local/bin:$PATH"
 RUN ln -s /home/omg/.local/bin/omg /home/omg/.local/bin/oc
