@@ -1,8 +1,10 @@
-# podman-omg [WiP]
-This repo is for containerizing the _o-must-gather app_ found here: https://github.com/kxr/o-must-gather
+# oci-omg [WiP]
+This repo is for creating an OCI compliant container image of the _o-must-gather app_ found here: https://github.com/kxr/o-must-gather
 
 This container image provides an environment run the `omg` command within this container.
 Additionally this tool also allows to use the `oc` command within the container. Just for convenience reasons.
+
+_If you run **docker** instead of **podman** just replace `podman` with `docker` in all the commands._
 
 ## Build
 `podman build -t omg:latest .` 
