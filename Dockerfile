@@ -1,6 +1,6 @@
-FROM python:3
+FROM registry.access.redhat.com/ubi8:latest
 
-RUN apt-get update && apt-get upgrade -y
+RUN dnf update -y && dnf install python3 git-core -y
 
 RUN useradd -ms /bin/bash omg
 WORKDIR /home/omg
