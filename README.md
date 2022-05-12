@@ -1,6 +1,8 @@
 # oci-omg [WiP]
 This repo is for creating an OCI compliant container image of the _o-must-gather app_ found here: https://github.com/kxr/o-must-gather
 
+**Note:** Currently using **V1** of o-must-gather, since _V2_ is still _work in progress_.
+
 This container image provides an environment run the `omg` command within this container.
 Additionally this tool also allows to use the `oc` command within the container. Just for convenience reasons.
 
