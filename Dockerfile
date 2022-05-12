@@ -1,5 +1,7 @@
 FROM python:3
 
+RUN apt-get update && apt-get upgrade -y
+
 RUN useradd -ms /bin/bash omg
 WORKDIR /home/omg
 
