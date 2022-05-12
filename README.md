@@ -8,6 +8,9 @@ Additionally this tool also allows to use the `oc` command within the container.
 
 _If you run **docker** instead of **podman** just replace `podman` with `docker` in all the commands._
 
+## Image at quay.io
+https://quay.io/repository/toughiq/omg
+
 ## Build
 `podman build -t quay.io/toughiq/omg:latest .` 
 
